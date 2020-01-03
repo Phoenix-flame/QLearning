@@ -9,10 +9,11 @@ class CellType(Enum):
 
 
 class Cell:
-    def __init__(self, x, y, cellType=0, free=True):
+    def __init__(self, x, y, cellType=0, id=0):
         self.x = x
         self.y = y
         self.cellType = cellType
+        self.id = id
 
 
     def getType(self):
@@ -27,5 +28,7 @@ class Cell:
     def __str__(self):
         return "[" + str(self.x) + ", " + str(self.y) + ", " + self.cellType + "]"
 
+    def __repr__(self):
+        return "[(" + str(self.x) + ", " + str(self.y) + "), " + self.cellType + "]"
 
 
