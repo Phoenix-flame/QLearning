@@ -10,7 +10,6 @@ from algorithms.td_error import *
 
 _map = Map('./maps/env1.map')
 _game = Game(_map)
-print(_map.end_point)
 first_algorithm = QLearning(_game)
 first_algorithm.run()
 
