@@ -1,7 +1,7 @@
 from source.map import *
 from source.game import *
 from algorithms.qlearning import *
-from algorithms.td_error import *
+from algorithms.monteCarlo import *
 
 # This project has 3 parts, first part is the map, that defines agent's worldself.
 # Second part is the game that the agent intracts with

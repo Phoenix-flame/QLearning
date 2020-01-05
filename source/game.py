@@ -19,7 +19,7 @@ class Game:
     def reset(self):
         self.current_state = self.map.start_point
         self.current_reward = 0
-        return self.current_state.id
+        return self.current_state.id, self.current_state
     
     def step(self, action):
         """
@@ -42,7 +42,7 @@ class Game:
             self.current_state = next_state
             
         if next_state.getKey() == self.map.end_point.getKey():
-            return next_state.id, self.R, True 
+            return next_state.id, self.R, True , next_state
         
         reward = 0
         
@@ -51,5 +51,5 @@ class Game:
         elif next_state.getType() == '0' or next_state.getType() == '1':
             reward = self.C
             
-        return next_state.id, reward, False 
+        return next_state.id, reward, False , next_state
         
