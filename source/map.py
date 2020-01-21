@@ -10,11 +10,11 @@ class Map:
 
         self.start_point = None
         self.end_point = None
+        self.cells = []
         self.createMap()
 
         self.n_actions = 4
         self.n_states = self.rows * self.cols
-        
         
        
 
@@ -30,6 +30,7 @@ class Map:
             
             for j, cell in enumerate(line):
                 self.map[(j, i)] = Cell(j, i, cell, id=id)
+                self.cells.append(self.map[(j, i)])
                 id += 1
                 if cell == '1':
                     self.start_point = self.getCell((j, i))

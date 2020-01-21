@@ -26,9 +26,9 @@ class Cell:
         return self.x == other.x and self.y == other.y
 
     def __str__(self):
-        return "[" + str(self.x) + ", " + str(self.y) + ", " + self.cellType + "]"
+        return "[" + str(self.x) + ", " + str(self.y) + ", " + str(self.cellType) + "]"
 
     def __repr__(self):
-        return "[(" + str(self.x) + ", " + str(self.y) + "), " + self.cellType + "]"
+        return "[(" + str(self.x) + ", " + str(self.y) + "), " + str(self.cellType) + "]"
 
 
