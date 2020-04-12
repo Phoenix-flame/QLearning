@@ -2,9 +2,9 @@ from source.map import *
 from source.game import *
 from algorithms.qlearning import *
 
-# This project has 3 parts, first part is the map, that defines agent's worldself.
-# Second part is the game that the agent intracts with
-# And finally, the algoritm which is the agent's brain
+# This project has 3 parts, first part is the map, that defines agent's world.
+# Second part is the game that the agent intracts with.
+# And finally, the algoritm which is the agent's brain.
 
 
 _map = Map('./maps/env1.map')
